@@ -1,0 +1,30 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon -w dist  dist/server.js",
+    "build": "tsc --watch",
+    "serve": "autossh -M 0 -R recedo:80:localhost:90 serveo.net",
+    "lab": "npx nodemon -e ts -x ts-node lab.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "actions-on-google": "^2.7.1",
+    "body-parser": "^1.19.0",
+    "dialogflow": "^0.10.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1",
+    "google-auth-library": "^4.2.0",
+    "gtoken": "^3.0.0",
+    "lodash": "^4.17.11",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  }
+}

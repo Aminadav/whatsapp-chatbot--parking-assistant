@@ -1,0 +1,131 @@
+{
+  "id": "8070b4d4-7de6-4955-b387-e15ba3fef7d3",
+  "name": "welcome - ask for name",
+  "auto": true,
+  "contexts": ["welcome-followup"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "welcome.welcome-custom",
+      "affectedContexts": [
+        {
+          "name": "name",
+          "parameters": {},
+          "lifespan": 200000
+        }
+      ],
+      "parameters": [
+        {
+          "id": "17f5b8a1-e2dc-491a-828e-2bd585da48d5",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "name",
+          "value": "$name",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "$name is a beautiful name. I will help you to... Just type a slot number"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508189124811,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "9c912f92-e7d7-4ac6-abbe-0009b31b414e",
+      "data": [
+        {
+          "text": "moshe",
+          "alias": "name",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0d538692-4554-4935-9f21-007e79e329eb",
+      "data": [
+        {
+          "text": "can i change my name to "
+        },
+        {
+          "text": "moshe",
+          "alias": "name",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "20976544-0a7a-475c-a11a-7257cadf9bfe",
+      "data": [
+        {
+          "text": "my name is "
+        },
+        {
+          "text": "moshe",
+          "alias": "name",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c7f0d928-bbec-4e8e-8b60-24fd972a8896",
+      "data": [
+        {
+          "text": "change my name to "
+        },
+        {
+          "text": "moshe",
+          "alias": "name",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e7f45cb2-b4cc-445d-b881-f5bd3b9e0df0",
+      "data": [
+        {
+          "text": "update my name to "
+        },
+        {
+          "text": "moshe",
+          "alias": "name",
+          "meta": "@sys.any",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}
