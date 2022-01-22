@@ -21,7 +21,7 @@
     "google-auth-library": "^4.2.0",
     "gtoken": "^3.0.0",
     "lodash": "^4.17.11",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "nodemon": "^1.19.1",
     "request": "^2.88.0",
     "ts-node": "^8.2.0",
